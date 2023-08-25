@@ -1,3 +1,36 @@
+export interface MassData {
+  massValue: number;
+  massExponent: number;
+}
+
+export interface VolData {
+  volValue: number;
+  volExponent: number;
+}
+
+export interface Planet {
+  id: string;
+  name: string;
+  isPlanet: boolean;
+  mass: MassData;
+  vol: VolData;
+  gravity: number;
+  avgTemp: number;
+  moonsCount?: number;
+  moons?: string[];
+}
+
+export interface Asteroid {
+  name: string;
+  discoveryYear: number;
+  orbitalPeriod: number;
+}
+
+export interface AllData {
+  planets: Planet[];
+  asteroids: Asteroid[];
+}
+
 export const data = {
   planets: [
     {
