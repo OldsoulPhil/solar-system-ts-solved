@@ -31,7 +31,7 @@ export interface AllData {
   asteroids: Asteroid[];
 }
 
-export const data = {
+export const data: AllData = {
   planets: [
     {
       id: "uranus",
